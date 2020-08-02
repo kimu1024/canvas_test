@@ -20,9 +20,22 @@ export class drawRectangle{
     this.strokeColor="rgba("+r+","+g+","+b+","+a+")";
   };
 
+  getStrokeColor(){
+    let str = this.strokeColor.replace("rgba(","");
+    str = str.replace(")","");
+    return str.split(",");
+  };
+
+
   setFillColor(r,g,b,a){
     this.fillColor="rgba("+r+","+g+","+b+","+a+")";
     console.log(this.fillColor);
+  };
+
+  getFillColor(){
+    let str = this.fillColor.replace("rgba(","");
+    str = str.replace(")","");
+    return str.split(",");
   };
 
   drawObject(ctx){

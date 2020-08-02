@@ -11,23 +11,27 @@
     <canvas id='canvas' width="600" height="600"></canvas>
   </div>
   <div class="inline-block_test">
+    <form id="mode">
+      <input name="mode" type="radio" value="draw" checked="checked"> draw mode</br>
+      <input name="mode" type="radio" value="select"> select mode </br></br>
+    </form>
     R:
-    <input type="range" value = "0" step="1" min="0", max="255"
+    <input type="range" value = "0" step="1" min="0" max="255" id='colorSlider_R'
     oninput="document.getElementById('result_R').value=this.value.padStart(3,'0')"/>
     <output id="result_R">000</output>
     <br/>
     G:
-    <input type="range" value = "0" step="1" min="0", max="255"
+    <input type="range" value = "0" step="1" min="0" max="255" id='colorSlider_G'
     oninput="document.getElementById('result_G').value=this.value.padStart(3,'0')"/>
     <output id="result_G">000</output>
     <br/>
     B:
-    <input type="range" value = "0" step="1" min="0", max="255"
+    <input type="range" value = "0" step="1" min="0" max="255" id='colorSlider_B'
     oninput="document.getElementById('result_B').value=this.value.padStart(3,'0')"/>
     <output id="result_B">000</output>
     <br/>
     alpha:
-    <input type="range" value = "0.5" step="0.01" min="0", max="1"
+    <input type="range" value = "0.5" step="0.01" min="0" max="1" id='colorSlider_alpha'
     oninput="document.getElementById('result_alpha').value=this.value"/>
     <output id="result_alpha">0.5</output>
     <br/>
