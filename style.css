@@ -1,0 +1,10 @@
+.inline-block_test{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+input.button{
+  font-size: 1.4em;
+  font-weight: bold;
+  padding: 10px 30px;
+}

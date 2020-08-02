@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>test canvas</title>
+<script language="javascript" src = "./js/main.js" type="module"></script>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <h1>test page</h1>
+  <div class="inline-block_test">
+    <canvas id='canvas' width="600" height="600"></canvas>
+  </div>
+  <div class="inline-block_test">
+    R:
+    <input type="range" value = "0" step="1" min="0", max="255"
+    oninput="document.getElementById('result_R').value=this.value.padStart(3,'0')"/>
+    <output id="result_R">000</output>
+    <br/>
+    G:
+    <input type="range" value = "0" step="1" min="0", max="255"
+    oninput="document.getElementById('result_G').value=this.value.padStart(3,'0')"/>
+    <output id="result_G">000</output>
+    <br/>
+    B:
+    <input type="range" value = "0" step="1" min="0", max="255"
+    oninput="document.getElementById('result_B').value=this.value.padStart(3,'0')"/>
+    <output id="result_B">000</output>
+    <br/>
+    alpha:
+    <input type="range" value = "0.5" step="0.01" min="0", max="1"
+    oninput="document.getElementById('result_alpha').value=this.value"/>
+    <output id="result_alpha">0.5</output>
+    <br/>
+    <input class="button" type="button" value="reset" id="resetButton"/>
+  </div>
+</body>
