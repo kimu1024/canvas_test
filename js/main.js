@@ -55,11 +55,7 @@ class selectMode{
     x=e.clientX - rect.left;
     y=e.clientY - rect.top;
     for(let i=rectArray.length-1; i>=0; i--){
-      let tmp=[rectArray[i].position[0],
-        rectArray[i].position[1],
-        rectArray[i].position[0]+rectArray[i].size[0],
-        rectArray[i].position[1]+rectArray[i].size[1]];
-      if(((x>tmp[0])&&(x<tmp[2]))&&((y>tmp[1])&&(y<tmp[3]))){
+      if(rectArray[i].isInside(x,y)){
         this.selectNum=i;
         this.selectFlag=true;
         this.dragFlag=true;
