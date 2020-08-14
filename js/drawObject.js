@@ -20,6 +20,13 @@ export class drawRectangle{
     this.strokeColor="rgba("+r+","+g+","+b+","+a+")";
   };
 
+  isInside(x,y){
+    return (x>this.position[0])&&
+    (x<this.position[0]+this.size[0])&&
+    (y>this.position[1])&&
+    (y<this.position[1]+this.size[1]);
+  };
+
   getStrokeColor(){
     let str = this.strokeColor.replace("rgba(","");
     str = str.replace(")","");
